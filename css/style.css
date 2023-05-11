@@ -84,3 +84,31 @@ a{
         font-size: 1.5rem;
     }
 }
+
+/* Badges */
+.bardge{
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    word-spacing: nowrap;
+    font-size: 2rem;
+}
+.bardge--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+.bardge--secondary{
+    background: var(--color-secondary);
+    color: #fff;
+}
+.bardge--small{
+    font-size: 1.5rem;
+}
+@media screen and (min-width:1024px){
+    .bardge{
+        font-size: 1.5rem;
+    }
+    .bardge--small{
+        font-size: 1.2rem;
+    }
+}
