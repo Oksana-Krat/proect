@@ -6,6 +6,9 @@
     --color-body: #918ca4;
 }
 
+*, *::after, *::before{
+    box-sizing: border-box;
+}
 .box{
     background-color: var(--color-primary);
     width: 100px;
@@ -160,4 +163,47 @@ a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+/* Buttons */
+.btn{
+    font-size: 1.8rem;
+    font-weight: 600px;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+}
+.btn--primary{
+    background: var(--color-primary);
+    color:#fff;
+}
+.btn--secondary{
+    background: var(--color-secondary);
+    color: #fff;
+}
+.btn--accent{
+    background: var(--color-accent);
+    color: #fff;
+}
+.btn--accent:hover{
+   filter: brightness(200%);
+}
+.btn--outline{
+    background: #fff;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+.btn--outline:hover{
+    background: var(--color-headings);
+    color: #fff;
+}
+.btn--block{
+    width: 100%;
+    display: inline-block;
+}
+@media screen and (min-width:1024px){
+    .btn{
+        font-size: 1.5rem;
+    }
 }
