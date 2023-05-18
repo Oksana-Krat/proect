@@ -245,3 +245,22 @@ a{
         font-size: 1.5rem;
     }
     }
+  
+/*  Card    */
+.card{
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    margin: 5px;
+    overflow: hidden;
+}
+.card_header, .card_body{
+    padding: 2rem 3rem;
+}
+.card--primary.card_header{
+    background: var(--color-primary);
+    color: #fff;
+}
+.card--secondary.card_header{
+    background: var(--color-secondary);
+    color: #fff;
+}
