@@ -94,8 +94,8 @@ a{
 .bardge{
     border-radius: 20px;
     padding: 0.5rem 2rem;
-    font-weight: bold;
-    word-spacing: nowrap;
+    font-weight: 600;
+    white-space: nowrap;
     font-size: 2rem;
 }
 .bardge--primary{
@@ -107,7 +107,8 @@ a{
     color: #fff;
 }
 .bardge--small{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width:1024px){
     .bardge{
@@ -263,4 +264,58 @@ a{
 .card--secondary.card_header{
     background: var(--color-secondary);
     color: #fff;
+}
+.card--secondary .bardge--small{
+    background: #02cdf1;
+}
+
+.card-container{
+    width: 40%;
+}
+
+/* Plan */
+.plan_name{
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+.plan_price{
+    font-size: 6rem;
+}
+.plan_billing-cycling{
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin: 1rem;
+}
+.plan_description{
+    font-weight: 300;
+    font-size: 2rem;
+    display: block;
+    letter-spacing: 1px;
+}
+.plan .list__item{
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:1024px){
+    .plan_name{
+        font-size: 1.4rem;
+    }
+    .plan_price{
+        font-size: 5rem;
+    }
+    .plan_billing-cycling{
+        font-size: 1.6rem;
+    }
+    .plan_description{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .card-container{
+        width: 60%;
+    }
 }
