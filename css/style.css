@@ -347,3 +347,46 @@ position: relative;
 .media_image{
     margin-top: 1rem;
 }
+
+/* Quoets */
+.quote{
+    font-size: 3rem;
+    font-style: italic;
+    color: #5c5577;
+}
+.quote_text::before{
+    content: open-quote;
+}
+.quote_text::after{
+    content: close-quote;
+}
+.quote_author{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.quote_company{
+    font-size: 2rem;
+    font-style: normal;
+    opacity: .4;
+    color: var(--color-headings);
+}
+.quote_line{
+    position: relative;
+    bottom: 10px;
+}
+
+@media screen and (min-width:1024px){
+.quote{
+    font-size: 2rem;
+}
+.quote_author{
+    font-size: 2.4rem;
+}
+.quote_company{
+    font-size: 1.6rem;
+}
+}
+
+
