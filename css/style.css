@@ -270,7 +270,7 @@ a{
 }
 
 .card-container{
-    width: 40%;
+    width: 50%;
 }
 
 /* Plan */
@@ -314,8 +314,36 @@ a{
     }
 }
 
+.plan--popular .card_header{
+position: relative;
+}
+
+.plan--popular .card_header::before{
+    content: url(../images/star.svg);
+     width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    }
+
+
 @media screen and (min-width:1024px){
     .card-container{
-        width: 60%;
+        width: 20%;
     }
+}
+
+/* Media */
+.media{
+    display: flex;
+}
+.media_title{
+    margin-top: 0;
+}
+.media_body{
+    padding: 0 2rem;
+}
+.media_image{
+    margin-top: 1rem;
 }
