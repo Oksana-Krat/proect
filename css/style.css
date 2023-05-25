@@ -180,7 +180,7 @@ a{
 /* Buttons */
 .btn{
     font-size: 1.8rem;
-    font-weight: 600px;
+   /*  font-weight: 600px; */
     padding: 2rem 3rem;
     text-transform: uppercase;
     border: none;
@@ -215,6 +215,12 @@ a{
     width: 100%;
     display: inline-block;
 }
+
+.btn--stretched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 @media screen and (min-width:1024px){
     .btn{
         font-size: 1.5rem;
@@ -441,10 +447,51 @@ position: relative;
 @media screen and (min-width:1024px){
     .testimonial .quote,
     .testimonial .quote_author{
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     .testimonial .quote{
         margin-left: 6rem;
     }
     }
+    
+/* Callaut */
+
+.callout{
+    padding: 4rem;
+    border-radius: 20px;
+}
+
+.callout--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.callout_heading{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.callout .btn{
+    justify-content: center;
+    align-self: center;
+}
+
+.callout_content{
+    text-align: center;
+}
+
+@media screen and (min-width:1024px){
+    .callout_content{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        margin: 0 3rem;
+    }
+
+    .callout .grid--col-2{
+        grid-template-columns: 1fr auto;
+    }
+    }
+   
     
