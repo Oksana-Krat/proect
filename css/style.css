@@ -5,6 +5,7 @@
     --color-headings:#1b0760;
     --color-body: #918ca4;
     --color-border: #ccc;
+    --color--white: #fff;
     --border--radius: 30px;
 }
 
@@ -32,6 +33,7 @@ body{
 
 h1, h2, h3{
     color: var(--color-headings);
+    line-height: 1.1;
 }
 
 h1{
@@ -161,6 +163,9 @@ a{
 
 .icon--primary{
     fill: var(--color-primary);
+}
+.icon--white{
+    fill: var(--color--white);
 }
 
 .icon-container{
@@ -417,7 +422,7 @@ position: relative;
 
 @media screen and (min-width:1024px){
     .grid--col-2{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     }
     }
 
@@ -536,6 +541,10 @@ position: relative;
     margin-top: 0;
 }
 
+.block_header{
+    text-align: center;
+}
+
 .block--dark{
     background: #000;
     color: #7b858b;
@@ -549,4 +558,84 @@ position: relative;
     padding-bottom: calc(var(--padding-vartical) + 4rem);
     clip-path: polygon(0% 0% 100% 0% 100% 100% 0% 80%);
 }
+.block--skewed-right{
+    padding-bottom: calc(var(--padding-vartical) + 4rem);
+    clip-path: polygon(0% 0% 100% 0% 100% 80% 0% 100%);
+}
 
+
+
+
+/* Navigation Bars */
+.nav{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: center;
+}
+
+.nav_list{
+    width: 100%;
+    margin: 0;
+}
+
+.nav_item{
+border: 1px solid #222;
+padding: 0.5rem 2rem;
+}
+
+.nav_item > a{
+    color: #d2d0db;
+    transition: color .3s;
+}
+
+.nav_item > a:hover{
+    color: #fff;
+}
+
+.nav_toggler{
+    opacity: .5;
+    transition: box-shadow .15s;
+    cursor: pointer;
+}
+
+.collapsible--expanded .nav_toggler{
+    opacity: 1;
+    box-shadow: 0 0 0 3px #555;
+    border-radius: 5px;
+}
+
+.nav_brand{
+    transform: translateY(5px);
+}
+
+@media screen and (min-width:768px){
+    .nav_toggler{
+        display: none;
+    }
+    .nav_list{
+        width: auto;
+        display: flex;
+        font-size: 1.6rem;
+    }
+    .nav_item{
+        border: 0;
+    }
+}
+
+/* Hero */
+.hero{
+    clip-path: polygon(0% 0% 100% 0% 100% 95% 0% 100%);
+}
+.hero_tagline{
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem;
+}
+
+.hero_image{
+    width: 100%;
+}

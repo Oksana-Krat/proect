@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 
-<body style="padding: 5rem;">
+<body>
 <!-- 
     <div class="box"></div>
     
@@ -176,7 +176,7 @@
     </div>
 </div> -->
 
-<div class="collapsible collapsible--expanded">
+<!-- <div class="collapsible collapsible--expanded">
     <header class="collapsible_header">
         <h2 class="collapsible_heading">Item1</h2>
         <svg class="icon collapsible_chevron">
@@ -184,7 +184,7 @@
             </svg>
           </header>
         <p class="collapsible_content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos tempora eveniet porro recusandae amet asperiores, in, illo non repudiandae pariatur sit consectetur perspiciatis deleniti labore autem, excepturi id nesciunt aspernatur eius consequuntur rem. Aspernatur qui harum quas tempora ipsa. Porro!</p>
-</div>
+</div> -->
 
 <!-- <section class="block container">
     <div class="block_header">
@@ -220,8 +220,32 @@
 </div>
 </section>
  -->
-<script src="js/main.js"></script>
+
+<nav class="nav collapsible">
+    <a class="nav_brand" href="/"><img src="/images/logo.svg" alt="Company Logo"></a>
+    <svg class="icon icon--white nav_toggler">
+        <use xlink:href="/images/sprite.svg#menu"></use>
+    </svg>
+    <ul class="list nav_list collapsible_content">
+      <li class="nav_item"><a href="#">Hosting</a></li>
+      <li class="nav_item"><a href="#">VPS</a></li>
+      <li class="nav_item"><a href="#">Domain</a></li>
+      <li class="nav_item"><a href="#">Prising</a></li>
+    </ul>
+</nav>
+
+<section class="block block--dark block--skewed-right hero">
+    <div class="container grid grid--col-2">
+    <header class="block_header">
+        <h1 class="block_heading">Cloud Hosting for Pros</h1>
+        <p class="hero_tagline">Deploy your websites in Jess than 60 second</p>
+        <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
+    </header>
+       <img class="hero_image" src="/images/banner.png" alt="Banner for hero">
+    </div>
+    </section>
+
+    <script src="js/main.js"></script>
 
 </body>
-
 </html>
