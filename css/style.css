@@ -195,7 +195,14 @@ a{
     text-transform: uppercase;
     border: none;
     border-radius: 40px;
-    text-align: center;
+    text-align: center;    
+}
+
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 .btn--primary{
     background: var(--color-primary);
@@ -258,7 +265,7 @@ a{
 .input-group input{
     border: 0;
     flex-grow: 1;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 .input-group .btn{
     margin: 5px;
@@ -293,7 +300,10 @@ a{
 }
 .card--secondary .bardge--small{
     background: #02cdf1;
-}
+    }
+ .card--primary .bardge--primary{
+    background: #126de4;
+ }   
 
 .card-container{
     width: 50%;
@@ -325,19 +335,12 @@ a{
     margin-bottom: 2rem;
 }
 
-@media screen and (min-width:1024px){
-    .plan_name{
-        font-size: 1.4rem;
-    }
-    .plan_price{
-        font-size: 5rem;
-    }
-    .plan_billing-cycling{
-        font-size: 1.6rem;
-    }
-    .plan_description{
-        font-size: 1.7rem;
-    }
+.plan{
+    transition: transform .2s ease-out;
+}
+
+.plan--popular{
+    transform: scale(1.1);
 }
 
 .plan--popular .card_header{
@@ -353,7 +356,29 @@ position: relative;
     right: 5%;
     }
 
+.plan:hover{
+    transform: scale(1.05);
+}
 
+.plan--popular:hover{
+    transform: scale(1.15);
+}
+
+    @media screen and (min-width:1024px){
+        .plan_name{
+            font-size: 1.4rem;
+        }
+        .plan_price{
+            font-size: 5rem;
+        }
+        .plan_billing-cycling{
+            font-size: 1.6rem;
+        }
+        .plan_description{
+            font-size: 1.7rem;
+        }
+    }
+    
 @media screen and (min-width:1024px){
     .card-container{
         width: 20%;
@@ -425,6 +450,12 @@ position: relative;
     grid-template-columns: repeat(2, 1fr);
     }
     }
+
+@media screen and (min-width:1024px){
+        .grid--col-3{
+        grid-template-columns: repeat(3, 1fr);
+        }
+        }
 
 /* Testimonial */
 .testimonial{
@@ -533,7 +564,6 @@ position: relative;
 .block{
     --padding-vartical:6rem;
     padding: var(--padding-vartical) 2rem;
-    border: 2px solid red;
     text-align: center;
 }
 
@@ -639,3 +669,47 @@ padding: 0.5rem 2rem;
 .hero_image{
     width: 100%;
 }
+
+@media screen and (min-width:768px){
+   .hero{padding-top: 0;
+       }
+       .hero_content{
+        text-align: left;
+        align-self: center;
+       }
+}
+
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee; 
+}
+
+
+/* Domains */
+.block-domain_prices{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 6rem);
+   font-size: 2rem;
+   font-weight: 600;
+   justify-items: center;
+   max-width: 700px;
+   margin: 0 auto;   
+}
+@media screen and (min-width:768px){
+    .block-domain_prices{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+ }
+/* 
+ Plans Block */
+.block-plan{
+    margin-bottom: 200px;
+}
+
+ .block-plan .grid{
+    gap: 8rem 4rem;
+ }
+
+ .block-plan .card{
+    max-width: 500px;
+ }
