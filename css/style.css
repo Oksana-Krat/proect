@@ -130,7 +130,7 @@ a{
 .list{
     list-style: none;
     padding-left: 0;
-    color: var(--color-headings);
+    
 }
 
 .list--inline .list__item{
@@ -142,6 +142,7 @@ a{
 .list-tick{
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
+    color: var(--color-headings);
 }
 
 .list-tick .list__item{
@@ -713,3 +714,37 @@ padding: 0.5rem 2rem;
  .block-plan .card{
     max-width: 500px;
  }
+
+/*  Feature */
+.feature{
+    gap:4rem;
+    margin: 12rem 0;
+}
+
+.feature_image{
+    width: 100%;
+}
+
+.feature_heading{
+    margin: 1rem 0;
+}
+
+@media screen and (min-width:768px){
+    .feature:nth-of-type(even) .feature_content{
+        order: 2;
+    }
+}
+
+/* Showcase Block */
+.block-showcase_grid{
+    gap:4rem
+}
+
+.block-showcase_image{
+    width: 100%;
+}
+
+.block--skewed-right.block-showcase{
+   clip-path: polygon(0% 0% 100% 0% 100% 95% 0% 100%);
+}
+
